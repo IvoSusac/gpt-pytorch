@@ -30,12 +30,13 @@ In this project, I fine-tuned the model on two datasets:
 - [Alpaca-Stanford Dataset](https://github.com/tatsu-lab/stanford_alpaca?tab=readme-ov-file#data-release): Used for instructional fine-tuning, where the model learns to generate responses to instructional prompts. I used 10,000 of the ~50,000 entries for computational reasons.
 - [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset): Used for spam classification, where the model is fine-tuned to distinguish between spam and legitimate text messages.
 
-# Fine-Tuning Results (5 epochs on 2 NVIDIA GeForce RTX 3090 GPUs)
-Instructional Fine-Tuning (Alpaca-Stanford):
+## Fine-Tuning Results (5 epochs on 2 NVIDIA GeForce RTX 3090 GPUs)
+
+### Instructional Fine-Tuning (Alpaca-Stanford):
 - Training Loss: 0.271
 - Validation Loss: 0.267
 
-# Spam Classification (SMSSpam):
+### Spam Classification (SMS Spam Collection):
 - Training Loss: 0.084
 - Validation Loss: 0.072
 - Test Set Accuracy: 96.5%
