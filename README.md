@@ -1,5 +1,5 @@
 # Generative Pre-trained Transformer in Pytorch
-This project implements a Generative Pre-trained Transformer (GPT) model (equivalent to OpenAI's GPT-2) from scratch using PyTorch. The goal is to create a foundational understanding of the GPT architecture by building and training a model that can generate text based on input prompts. This project is intended for educational purposes and to serve as a starting point as I continue my research in the field of NLP and GenAI.
+This project implements a Generative Pre-trained Transformer (GPT) model (equivalent to OpenAI's GPT-2) from scratch using PyTorch. The goal is to create a foundational understanding of the GPT architecture by building and training a model that can generate text based on input prompts. It's the final project of my Undergraduate program in Mathematics and Computer Science at the School of Applied Mathematics and Informatics in Osijek and serves as a starting point as I continue my research in the field of NLP and GenAI.
 
 ## The GPT Architecture
 The architecture of the model is based on the [original GPT paper](https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf).
