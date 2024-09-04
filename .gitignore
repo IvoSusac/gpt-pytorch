@@ -1,0 +1,8 @@
+# Ignore pycache
+__pycache__/
+
+# Ignore models as they are too big to push
+model_and_optimizer.pt
+model_and_optimizer_3.pt
+classifier.pt
+gpt2
