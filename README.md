@@ -49,7 +49,14 @@ pip install -r requirements.txt
 ## Usage
 **Note: A more user-friendly framework for this project is in development.**
 
-Right now, to fine-tune the model on your specific dataset, you must modify the `fine_tune_instructional.py` or `fine_tune_classifier.py` script to load your own dataset and model and run:
+By running
+```
+streamlit run app.py
+```
+you can play around with the models using Streamlit UI.
+
+
+As of right now, to fine-tune the model on your specific dataset, you must modify the `fine_tune_instructional.py` or `fine_tune_classifier.py` script to load your own dataset and model and run:
 ```
 python fine_tune_instructional.py
 ```
@@ -62,12 +69,6 @@ depending on the task you want to fine-tune for.
 Evaluation of the instruction-finetuned model can be done using `GPT-4o-mini`. 
 The `evaluate_responses.py` script generates model responses for 200 (for computational reasons, can be increased depending on your setup) test dataset questions.
 The `gpt_eval.py` script reads the responses and computes the average scores (which range from 0 to 100).
-
-By running
-```
-streamlit run app.py
-```
-you can play around with the models using Streamlit UI.
 
 ## Acknowledgments
 Special thanks to my mentor, Dr. Domagoj Matijević, for his guidance and support throughout the development of this project. <br>
