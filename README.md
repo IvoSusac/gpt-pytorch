@@ -20,7 +20,7 @@ The following diagram provides a conceptual overview of the mentioned architectu
 The implementation of each of these layers, along with the entire GPT model can be found in the **`modules`** folder.
 
 ## Pre-Training
-By pre-training the model on large corpora, the model learns general language representations by predicting the next word in a sentence, given all previous words. The model is trained on raw text, in an unsupervised manner. Even though pre-training is implemented in the `train.py` script, it requires **a lot** of computational resources. Luckily, pre-trained model weights for all of the GPT-2 models are open-sourced, and can be downloaded and loaded into the implemented model by leveraging the functions in the `get_gpt_weights.py` script.
+By pre-training the model on large corpora, the model learns general language representations by predicting the next word in a sentence, given all previous words. The model is trained on raw text, in an unsupervised manner. Even though pre-training is implemented in the `train.py` script, it requires **a lot** of computational resources. Luckily, pre-trained model weights for all of the GPT-2 models are open-sourced, and can be downloaded and loaded into the implemented model by leveraging functions in the `get_gpt_weights.py` script.
 
 ## Fine-Tuning
 After pretraining, the model is fine-tuned on a smaller, task-specific dataset. Fine-tuning allows the model to adapt its general language understanding to specific tasks, such as text classification, summarization, or question answering. 
