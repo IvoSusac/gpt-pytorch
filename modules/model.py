@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-from transformer import TransformerBlock
-from utils import LayerNorm
+from modules.transformer import TransformerBlock
+from modules.layer_norm import LayerNorm
 
 class MyGPTModel(nn.Module):
     def __init__(self, cfg):

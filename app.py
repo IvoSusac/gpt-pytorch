@@ -1,6 +1,6 @@
 import streamlit as st
 import torch
-from model import MyGPTModel
+from modules.model import MyGPTModel
 from config import GPT_774_CONFIG
 from tiktoken import get_encoding
 from utils import format_input, generate_text_v2

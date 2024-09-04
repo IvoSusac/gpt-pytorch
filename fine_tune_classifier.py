@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from config import *
 from utils import generate_text
 from get_gpt_weights import download_and_load_gpt2_weights, load_weights_to_model
-from model import MyGPTModel
+from modules.model import MyGPTModel
 
 url = "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip"
 zip_path = "sms_spam_collection.zip"

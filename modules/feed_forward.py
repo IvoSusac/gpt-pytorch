@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from utils import GELU
+from modules.gelu import GELU
 
 # this feedforward layer is used in the transformer model
 # it allows the model to learn complex patterns in the data by using multiple linear layers with a gelu activation function in between

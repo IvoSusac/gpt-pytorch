@@ -1,5 +1,5 @@
 import torch
-from model import MyGPTModel
+from modules.model import MyGPTModel
 from config import *
 from get_gpt_weights import download_and_load_gpt2_weights, load_weights_to_model
 import json
@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 from train import calculate_epoch_loss, train_model
 import os
 import torch.nn as nn
-from lora import *
+from modules.lora import *
 
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 

@@ -1,8 +1,7 @@
-import torch
 import torch.nn as nn
-from attention import MultiHeadAttention
-from feed_forward import FeedForward
-from utils import LayerNorm
+from modules.attention import MultiHeadAttention
+from modules.feed_forward import FeedForward
+from modules.layer_norm import LayerNorm
 
 # residual connections - the input of one layer is added to the output of another layer
 # this helps with the vanishing gradient problem because it keeps the gradients relatively large

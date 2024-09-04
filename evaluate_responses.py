@@ -1,13 +1,12 @@
 import torch
 import tiktoken
-from model import MyGPTModel
+from modules.model import MyGPTModel
 from config import *
 from get_gpt_weights import download_and_load_gpt2_weights, load_weights_to_model
 import json
-from utils import format_input, collate_batch, InstructionDataset
+from utils import format_input, collate_batch, InstructionDataset, generate_text_v2
 from functools import partial
 from torch.utils.data import DataLoader
-from utils import generate_text_v2
 
 if __name__ == "__main__":
     tokenizer = tiktoken.get_encoding("gpt2")
@@ -67,7 +66,7 @@ if __name__ == "__main__":
          "model response": response.strip()
         })
 
-    with open('model_responses_2.json', 'w') as json_file:
+    with open('model_responses/model_responses_2.json', 'w') as json_file:
         json.dump(model_responses, json_file, indent=4)
 
 

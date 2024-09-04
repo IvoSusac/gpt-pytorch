@@ -36,11 +36,11 @@ def generate_scores(json_data, client):
 
 
 if __name__ == "__main__":
-    client = OpenAI(api_key=os.getenv('OPENAI_API_KEY')])
+    client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
     #prompt = f"Respond with 'hello world' if you got this message."
     #print(run_gpt4o_mini(prompt, client))
 
-    json_file = "model_responses_1.json"
+    json_file = "model_responses/model_responses_1.json"
 
     with open(json_file, "r") as file:
         json_data = json.load(file) 
