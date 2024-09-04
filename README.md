@@ -12,7 +12,10 @@ It mostly consists of stacked Transformer decoder layers, each composed of:
 
 The following diagram provides a conceptual overview of the mentioned architecture:
 
-<img src="https://github.com/user-attachments/assets/cd45144b-9a1b-4a33-ad0a-7a3f76dc6b03" alt="Conceptual architecture of a GPT model"/>
+<img src="https://github.com/user-attachments/assets/cd45144b-9a1b-4a33-ad0a-7a3f76dc6b03" alt="Conceptual architecture of a GPT model"/> <br>
+*Figure 1: Conceptual architecture of a GPT model*  
+*Cited from*: A Mathematical Investigation of Hallucination and Creativity in GPT Models - Scientific Figure on ResearchGate.  
+*Available from*: [ResearchGate](https://www.researchgate.net/figure/Conceptual-architecture-of-a-GPT-model_fig1_370853178)
 
 The implementation of each of these layers, along with the entire GPT model can be found in the **`modules`** folder.
 
